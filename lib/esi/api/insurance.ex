@@ -5,7 +5,7 @@ defmodule ESI.API.Insurance do
   - `:language` (DEFAULT: `:"en-us"`) -- Language to use in the response, takes precedence over Accept-Language
   """
   @type prices_opts :: [prices_opt]
-  @type prices_opt :: {:language, nil | :de | :"en-us" | :fr | :ja | :ru | :zh}
+  @type prices_opt :: {:language, nil | :de | :"en-us" | :fr | :ja | :ru | :zh | :ko}
 
   @doc """
   Return available insurance levels for all ship types.

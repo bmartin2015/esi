@@ -1,13 +1,13 @@
 defmodule ESI.Mixfile do
   use Mix.Project
 
-  @version "0.1.2"
+  @version "0.2.0"
 
   def project do
     [
       app: :esi,
       version: @version,
-      elixir: "~> 1.4",
+      elixir: "~> 1.10",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       source_url: "https://github.com/bruce/esi",
@@ -46,9 +46,9 @@ defmodule ESI.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:hackney, "~> 1.10"},
-      {:poison, "~> 3.1"},
-      {:ex_doc, "~> 0.18.1", only: :dev, runtime: false}
+      {:hackney, "~> 1.15"},
+      {:poison, "~> 4.0"},
+      {:ex_doc, "~> 0.21.3", only: :dev, runtime: false}
     ]
   end
 

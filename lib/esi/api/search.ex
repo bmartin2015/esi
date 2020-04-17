@@ -22,7 +22,7 @@ defmodule ESI.API.Search do
              | :solar_system
              | :station
            ]}
-          | {:language, nil | :de | :"en-us" | :fr | :ja | :ru | :zh}
+          | {:language, nil | :de | :"en-us" | :fr | :ja | :ru | :zh | :ko}
           | {:search, String.t()}
           | {:strict, nil | boolean}
 
